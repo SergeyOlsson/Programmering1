@@ -15,7 +15,7 @@ public class TestClass {
 
         //input kräver en definering men 100 har inget med testet att göra.
         int input = 100;
-        int expected = 1;
+        int expected = 0;
         int actual = test.getLines(input);
         assertEquals(expected, actual);
 
@@ -40,5 +40,16 @@ public class TestClass {
         int expected = 4;
         int actual = test.stop.length();
         assertEquals(expected, actual);
+    }
+
+    //Testar så att min teckenräknare fungerar.
+    @Test
+    public void testCountCharacters() {
+        SecondClass test = new SecondClass();
+        String input = "Textlength";
+        test.count(input);
+
+        int expected = 10;
+        assertEquals(expected, input.length());
     }
 }

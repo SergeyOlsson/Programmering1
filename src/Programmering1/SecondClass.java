@@ -28,7 +28,7 @@ public class SecondClass {
         return lines;
     }
 
-    //används för test
+
     public boolean stopBoolean(String text) {
         return text.equals(stop);
     }
