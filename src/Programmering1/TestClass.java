@@ -48,7 +48,6 @@ public class TestClass {
         SecondClass test = new SecondClass();
         String input = "Textlength";
         test.count(input);
-
         int expected = 10;
         assertEquals(expected, input.length());
     }
